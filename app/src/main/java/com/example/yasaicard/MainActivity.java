@@ -2,6 +2,7 @@ package com.example.yasaicard;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -35,14 +36,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (v == btnCreateNewCard) {
             // Goto Create New Card Screen
-            // TODO ...
+            Intent intent = new Intent(MainActivity.this, AddNewCardActivity.class);
+            // start the activity
+            startActivity(intent);
+
         } else if ( v == btnListCards) {
             // Goto ListCards Screen
-            // TODO ...
+            Intent intent = new Intent(MainActivity.this, ListCardsSetActivity.class);
+            // start the activity
+            startActivity(intent);
 
         } else if( v == btnSetting) {
             // Goto Setting Screen
-            // TODO ...
+            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+            // start the activity
+            startActivity(intent);
         }
     }
 
