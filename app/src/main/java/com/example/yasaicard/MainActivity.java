@@ -48,7 +48,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         } else if( v == btnSetting) {
             // Goto Setting Screen
-            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+            //Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+            Intent intent = new Intent(MainActivity.this, GameActivity.class);
             // start the activity
             startActivity(intent);
         }

@@ -8,4 +8,26 @@
     tools:context=".AddNewCardActivity"
     tools:showIn="@layout/activity_add_new_card">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txt_inputWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/txt_inputMean"
+            android:layout_width="match_parent"
+            android:layout_height="333dp"
+            android:ems="10"
+            android:maxLines = "100"
+            android:scrollbars = "vertical"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
